@@ -9,6 +9,7 @@ namespace BarUTomaModels.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UserRoleId { get; set; }
+        [Required]
         public int Role { get; set; }
 
         public virtual List<User> Users { get; set; } //1..m

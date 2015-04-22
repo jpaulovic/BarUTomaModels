@@ -8,6 +8,7 @@ namespace BarUTomaModels.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int BarTypeId { get; set; }
+        [Required]
         public string Name { get; set; }
         //list of bars of given type
         //public virtual List<Bar> Bars { get; set; } 

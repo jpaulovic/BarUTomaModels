@@ -8,8 +8,10 @@ namespace BarUTomaModels.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int QuantityId { get; set; }
+        [Required]
         public int Amount { get; set; }
 
+        [Required]
         public Unit Unit { get; set; }
     }
 }

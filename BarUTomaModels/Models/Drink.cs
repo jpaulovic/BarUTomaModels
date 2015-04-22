@@ -9,10 +9,13 @@ namespace BarUTomaModels.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int DrinkId { get; set; }
+        [Required]
         public string Name { get; set; }
+        [Required]
         public string Info { get; set; }
 
         public virtual Bar Bar { get; set; }
+        [Required]
         public virtual Quantity Price { get; set; }
         public virtual List<IngredientDrink> IngredientsUsed { get; set; } //1..m
         public virtual List<DrinkBar> BarsThatHaveThisDrink { get; set; } //m..n 

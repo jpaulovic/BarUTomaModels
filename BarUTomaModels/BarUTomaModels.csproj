@@ -42,9 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Bar.cs" />
     <Compile Include="Models\BarType.cs" />
     <Compile Include="Models\Bottle.cs" />
+    <Compile Include="Models\Country.cs" />
     <Compile Include="Models\Drink.cs" />
     <Compile Include="Models\DrinkBar.cs" />
     <Compile Include="Models\Event.cs" />

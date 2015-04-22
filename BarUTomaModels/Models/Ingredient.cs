@@ -13,5 +13,6 @@ namespace BarUTomaModels.Models
 
         public virtual List<IngredientDrink> DrinksThatUseIngredient { get; set; } //1..m
         public virtual List<Bottle> Bottles { get; set; } //1..m
+        public virtual Unit AlcoholContent { get; set; } //alcohol content in %
     }
 }

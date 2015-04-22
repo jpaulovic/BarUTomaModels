@@ -1,6 +1,4 @@
-﻿using BarUTomaServer.Models;
-
-namespace BarUTomaModels.Models
+﻿namespace BarUTomaModels.Models
 {
     public class IngredientDrink
     {

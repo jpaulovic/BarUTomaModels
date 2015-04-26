@@ -13,8 +13,8 @@ namespace BarUTomaModels.Models
         public DateTime BottleBought { get; set; } //when bottle was bought
 
         [Required]
-        public Ingredient Ingredient { get; set; }
+        public Ingredient Ingredient { get; set; } //what is in the bottle
         [Required]
-        public Quantity Quantity { get; set; }
+        public Quantity Quantity { get; set; } //how much there is left in the bottle
     }
 }

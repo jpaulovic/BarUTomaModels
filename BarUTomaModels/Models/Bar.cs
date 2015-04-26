@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Net;
 
 namespace BarUTomaModels.Models
 {
@@ -21,6 +23,7 @@ namespace BarUTomaModels.Models
         public virtual List<Drink> Drinks { get; set; } //0..m
         public virtual List<Event> Events { get; set; } //1..m
         public virtual List<Order> Orders { get; set; } //1..m
+        public virtual List<Tuple<Ingredient, Quantity>> IngredientsAvailable { get; set; } //0..m
         [Required]
         public virtual Address Address { get; set; }
     }

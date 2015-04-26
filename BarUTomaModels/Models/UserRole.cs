@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -9,6 +10,9 @@ namespace BarUTomaModels.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UserRoleId { get; set; }
+        /// <summary>
+        /// Roles: 0 == super admin, 1 == bar owner, 2 == customer 
+        /// </summary>
         [Required]
         public int Role { get; set; }
 

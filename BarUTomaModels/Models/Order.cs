@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
 
 namespace BarUTomaModels.Models
 {
+    [JsonObject(MemberSerialization.OptIn)]
     public class Order
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [JsonProperty]
         public int OrderId { get; set; }
         [Required]
+        [JsonProperty]
         public DateTime DateTime { get; set; }
 
         [Required]

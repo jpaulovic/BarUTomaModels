@@ -18,13 +18,13 @@ namespace BarUTomaModels.Models
         public DateTime DateTime { get; set; }
 
         [Required]
-        public User User { get; set; }
+        public virtual User User { get; set; }
         [Required]
-        public Drink Drink{ get; set; }
+        public virtual Drink Drink{ get; set; }
         [Required]
-        public Bar Bar { get; set; }
+        public virtual Bar Bar { get; set; }
         [Required]
-        public Quantity Price { get; set; }
+        public virtual Quantity Price { get; set; }
         //one order can include multiple drinks
         public virtual List<OrderDrink> OrderDrinks { get; set; } //1..m+ 
     }

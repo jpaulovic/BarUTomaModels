@@ -18,12 +18,12 @@ namespace BarUTomaModels.Models
 
         [Required]
         [JsonProperty]
-        public Ingredient Ingredient { get; set; } //what is in the bottle
+        public virtual Ingredient Ingredient { get; set; } //what is in the bottle
         [Required]
         [JsonProperty]
-        public Quantity Quantity { get; set; } //how much there is left in the bottle
+        public virtual Quantity Quantity { get; set; } //how much there is left in the bottle
         [Required]
         [JsonProperty]
-        public Bar Bar { get; set; }
+        public virtual Bar Bar { get; set; }
     }
 }

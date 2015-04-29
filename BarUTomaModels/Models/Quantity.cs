@@ -16,6 +16,6 @@ namespace BarUTomaModels.Models
         public decimal Amount { get; set; }
         [Required]
         [JsonProperty]
-        public Unit Unit { get; set; }
+        public virtual Unit Unit { get; set; }
     }
 }

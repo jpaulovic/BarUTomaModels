@@ -24,6 +24,7 @@ namespace BarUTomaModels.Models
         public virtual Quantity Price { get; set; }
 
         public virtual Bar Bar { get; set; }
+        [JsonProperty]
         public virtual List<IngredientDrink> IngredientsUsed { get; set; } //1..m
         public virtual List<DrinkBar> BarsThatHaveThisDrink { get; set; } //m..n 
         public virtual List<OrderDrink> Orders { get; set; } //m..n

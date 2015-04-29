@@ -17,12 +17,12 @@ namespace BarUTomaModels.Models
         
         [Required]
         [JsonProperty]
-        public Drink Drink { get; set; }
+        public virtual Drink Drink { get; set; }
         [Required]
         [JsonProperty]
-        public Bar Bar { get; set; }
+        public virtual Bar Bar { get; set; }
         [Required]
         [JsonProperty]
-        public Quantity Price { get; set; }
+        public virtual Quantity Price { get; set; }
     }
 }

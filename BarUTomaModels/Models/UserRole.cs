@@ -20,6 +20,6 @@ namespace BarUTomaModels.Models
         [JsonProperty]
         public int Role { get; set; }
 
-        public virtual List<User> Users { get; set; } //1..m
+        public virtual List<ApplicationUser> Users { get; set; } //1..m
     }
 }

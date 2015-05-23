@@ -26,6 +26,12 @@ namespace BarUTomaModels.Models
         [Required]
         [JsonProperty]
         public virtual Address Address { get; set; }
+        [Required]
+        [JsonProperty]
+        public DateTime DateCreated { get; set; }
+        [Required]
+        [JsonProperty]
+        public DateTime DateModified { get; set; }
 
         //Navigation properties
 

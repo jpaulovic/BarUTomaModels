@@ -13,7 +13,7 @@ namespace BarUTomaModels.Models
         [JsonProperty]
         public int UserBarId { get; set; }
         [Required]
-        public virtual User User { get; set; }
+        public virtual ApplicationUser User { get; set; }
         [Required]
         public virtual Bar Bar { get; set; }
         [Required]

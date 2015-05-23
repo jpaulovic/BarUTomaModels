@@ -18,7 +18,7 @@ namespace BarUTomaModels.Models
         public DateTime DateTime { get; set; }
 
         [Required]
-        public virtual User User { get; set; }
+        public virtual ApplicationUser User { get; set; }
         [Required]
         public virtual Drink Drink{ get; set; }
         [Required]

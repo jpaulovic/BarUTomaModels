@@ -21,5 +21,10 @@ namespace BarUTomaModels.Models
         public int Role { get; set; }
 
         public virtual List<ApplicationUser> Users { get; set; } //1..m
+
+        public UserRole(int role)
+        {
+            Role = role;
+        }
     }
 }

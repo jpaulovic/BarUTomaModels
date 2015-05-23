@@ -12,7 +12,7 @@ using Newtonsoft.Json;
 namespace BarUTomaModels.Models
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
-    public class ApplicationUser : IdentityUser
+    public class ApplicationUser : IdentityUser, IEntity
     {
         //[Key]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -21,16 +21,19 @@ namespace BarUTomaModels.Models
         //[Required]
         //[JsonProperty]
         //public string Name { get; set; }
-        [Required]
-        [JsonProperty]
-        public override string Email { get; set; }
-        [Required]
-        [JsonProperty]
-        public string Password { get; set; }
-
         //[Required]
+        //[JsonProperty]
+        //public override string Email { get; set; }
+        //[Required]
+        //[JsonProperty]
+        //public string Password { get; set; }
+
+        [Required]
         [JsonProperty]
-        public virtual Unit DefaultUnit { get; set; }
+        public int DefaultPriceUnitId { get; set; }
+        [Required]
+        [JsonProperty]
+        public bool Imperial { get; set; }
         public virtual List<UserBar> Bars { get; set; } //1..m
         public virtual List<Order> Orders { get; set; } //1..m
 

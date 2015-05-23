@@ -92,7 +92,6 @@
     <Compile Include="Models\OrderDrink.cs" />
     <Compile Include="Models\Quantity.cs" />
     <Compile Include="Models\Unit.cs" />
-    <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserBar.cs" />
     <Compile Include="Models\UserRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

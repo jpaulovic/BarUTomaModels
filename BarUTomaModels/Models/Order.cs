@@ -16,11 +16,11 @@ namespace BarUTomaModels.Models
         [Required]
         [JsonProperty]
         public DateTime DateTime { get; set; }
+        [JsonProperty]
+        public string Place { get; set; }
 
         [Required]
         public virtual ApplicationUser User { get; set; }
-        [Required]
-        public virtual Drink Drink{ get; set; }
         [Required]
         public virtual Bar Bar { get; set; }
         [Required]

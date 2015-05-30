@@ -17,6 +17,6 @@ namespace BarUTomaModels.Models
         [Required]
         public virtual Bar Bar { get; set; }
         [Required]
-        public virtual UserRole UserRole { get; set; }
+        public virtual int UserRole { get; set; }
     }
 }

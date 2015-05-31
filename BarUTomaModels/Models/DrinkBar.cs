@@ -14,6 +14,9 @@ namespace BarUTomaModels.Models
         public int DrinkBarId { get; set; }
         [JsonProperty]
         public string Info { get; set; }
+        [Required]
+        [JsonProperty]
+        public string Name { get; set; }
         
         [Required]
         [JsonProperty]

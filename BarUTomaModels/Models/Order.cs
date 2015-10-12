@@ -24,8 +24,10 @@ namespace BarUTomaModels.Models
         [Required]
         public virtual Bar Bar { get; set; }
         [Required]
+        [JsonProperty]
         public virtual Quantity Price { get; set; }
         //one order can include multiple drinks
+        [JsonProperty]
         public virtual List<OrderDrink> OrderDrinks { get; set; } //1..m+ 
     }
 }

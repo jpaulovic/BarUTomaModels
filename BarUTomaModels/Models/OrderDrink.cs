@@ -15,7 +15,9 @@ namespace BarUTomaModels.Models
         [Required]
         public virtual Order Order { get; set; }
         [Required]
+        [JsonProperty]
         public virtual Drink Drink { get; set; }
+        [JsonProperty]
         [Required]
         public virtual Quantity Quantity { get; set; }
     }
